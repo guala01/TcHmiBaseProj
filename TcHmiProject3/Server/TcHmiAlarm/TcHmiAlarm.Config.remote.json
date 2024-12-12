@@ -1,0 +1,24 @@
+{
+    "alarmSymbols": {
+        "PLC1.GVL.Var_Allarme_BOOL_1": {
+            "alarmSettings": {
+                "ALARMSETTING": {
+                    "alarmTextKey": "settingMatch",
+                    "condition": [
+                        {
+                            "comparator": "==",
+                            "path": "",
+                            "value": true
+                        }
+                    ],
+                    "enabled": true,
+                    "notificationType": 0,
+                    "severity": 1
+                }
+            },
+            "enabled": true,
+            "interval": "PT1S",
+            "onError": false
+        }
+    }
+}

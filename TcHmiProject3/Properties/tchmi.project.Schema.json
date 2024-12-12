@@ -1,0 +1,58 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "definitions": {
+    "Person": {
+      "properties": {
+        "ID": {
+          "$ref": "tchmi:general#/definitions/Number"
+        },
+        "Name": {
+          "$ref": "tchmi:general#/definitions/String"
+        },
+        "Retired": {
+          "$ref": "tchmi:general#/definitions/Boolean"
+        }
+      },
+      "type": "object",
+      "id": "tchmi:project#/definitions/Person"
+    },
+    "Array(0..0) OF Person": {
+      "items": {
+        "$ref": "tchmi:project#/definitions/Person"
+      },
+      "type": "array"
+    },
+    "Cane": {
+      "properties": {
+        "Nome": {
+          "$ref": "tchmi:general#/definitions/String"
+        },
+        "Altezza": {
+          "$ref": "tchmi:general#/definitions/DOUBLE"
+        },
+        "Eta": {
+          "$ref": "tchmi:general#/definitions/Number"
+        }
+      },
+      "type": "object"
+    },
+    "Array(0..0) OF Cane": {
+      "items": {
+        "$ref": "tchmi:project#/definitions/Cane"
+      },
+      "type": "array"
+    },
+    "Symbol_Of_Array(0..0) OF Cane": {
+      "allOf": [
+        {
+          "$ref": "tchmi:framework#/definitions/Symbol"
+        },
+        {
+          "frameworkSymbolSubType": {
+            "$ref": "tchmi:project#/definitions/Array(0..0) OF Cane"
+          }
+        }
+      ]
+    }
+  }
+}

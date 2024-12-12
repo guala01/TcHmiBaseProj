@@ -1,0 +1,49 @@
+{
+    "recipeList": {
+        "Recipe1": {
+            "recipeTypeName": "RecipeType",
+            "values": {
+                "PLC1.GVL.Var_Ricetta_1": 0,
+                "PLC1.GVL.Var_Ricetta_2": 10,
+                "PLC1.GVL.Var_Ricetta_3": 20
+            }
+        }
+    },
+    "recipeTypeList": {
+        "RecipeType": {
+            "members": {
+                "PLC1.GVL.Var_Ricetta_1": {
+                    "defaultValue": 0,
+                    "enabled": true,
+                    "group": "",
+                    "order": 0,
+                    "schema": {},
+                    "symbol": "PLC1.GVL.Var_Ricetta_1",
+                    "unit": ""
+                },
+                "PLC1.GVL.Var_Ricetta_2": {
+                    "defaultValue": 10,
+                    "enabled": true,
+                    "group": "",
+                    "order": 1,
+                    "schema": {},
+                    "symbol": "PLC1.GVL.Var_Ricetta_2",
+                    "unit": ""
+                },
+                "PLC1.GVL.Var_Ricetta_3": {
+                    "defaultValue": 20,
+                    "enabled": true,
+                    "group": "",
+                    "order": 2,
+                    "schema": {},
+                    "symbol": "PLC1.GVL.Var_Ricetta_3",
+                    "unit": ""
+                }
+            },
+            "options": {
+                "enabled": "None"
+            },
+            "recipeTypeNames": []
+        }
+    }
+}

@@ -1,0 +1,213 @@
+{
+  "$schema": "./../../Packages/Beckhoff.TwinCAT.HMI.Framework.12.760.59/runtimes/native1.12-tchmi/Schema/TchmiConfig.Schema.json",
+  "basePath": "./framework",
+  "scaleMode": "None",
+  "startupView": "Desktop.view",
+  "loginPage": "",
+  "tcHmiServer": {
+    "websocketIntervalTime": 500,
+    "websocketTimeout": 20000,
+    "websocketSystemTimeout": 60000,
+    "websocketSubscriptionMode": "Change"
+  },
+  "activeTheme": "Base",
+  "themes": {
+    "Base-Dark": {
+      "resources": [
+        {
+          "name": "Themes/Base-Dark/Base-DarkStyle.css",
+          "description": "",
+          "type": "Stylesheet"
+        },
+        {
+          "name": "Themes/Base-Dark/Base-Dark.theme",
+          "description": "",
+          "type": "ThemedValues"
+        }
+      ],
+      "replacesThemeForControls": [],
+      "replacesThemeForPackageComponents": []
+    },
+    "Base": {
+      "resources": [
+        {
+          "name": "Themes/Base/Base.theme",
+          "description": "",
+          "type": "ThemedValues"
+        },
+        {
+          "name": "Themes/Base/BaseStyle.css",
+          "description": "",
+          "type": "Stylesheet"
+        }
+      ],
+      "replacesThemeForControls": [],
+      "replacesThemeForPackageComponents": []
+    }
+  },
+  "dependencyFiles": [
+    {
+      "name": "Fonts/Fonts.css",
+      "description": "",
+      "type": "Stylesheet"
+    },
+    {
+      "name": "addItem.js",
+      "description": "",
+      "type": "JavaScript"
+    },
+    {
+      "name": "checkColor.js",
+      "description": "",
+      "type": "JavaScript"
+    }
+  ],
+  "userControls": [],
+  "content": [
+    {
+      "url": "Contents/datas.content",
+      "preload": false,
+      "keepAlive": false,
+      "loadSync": false,
+      "preloadBindings": false
+    },
+    {
+      "url": "Contents/Home_page.content",
+      "preload": false,
+      "keepAlive": false,
+      "loadSync": false,
+      "preloadBindings": false
+    }
+  ],
+  "views": [
+    {
+      "url": "Desktop.view",
+      "preload": false,
+      "keepAlive": false,
+      "preloadBindings": false
+    }
+  ],
+  "userFunctions": [
+    {
+      "url": "addItem.js"
+    },
+    {
+      "url": "checkColor.js"
+    }
+  ],
+  "symbols": {
+    "internal": {
+      "ValueLinearGauge": {
+        "value": 0.0,
+        "type": "tchmi:general#/definitions/Number",
+        "persist": false,
+        "readonly": false
+      },
+      "ArrayofP": {
+        "value": [
+          {
+            "ID": 12345.0,
+            "Name": "Giorgio",
+            "Retired": true
+          },
+          {
+            "ID": 54321.0,
+            "Name": "Tommaso",
+            "Retired": false
+          },
+          {
+            "ID": 90876.0,
+            "Name": "Vito",
+            "Retired": true
+          }
+        ],
+        "type": "tchmi:project#/definitions/Array(0..0) OF Person",
+        "persist": false,
+        "readonly": false
+      },
+      "caneArray": {
+        "value": [
+          {
+            "Altezza": 1.1,
+            "Eta": 8.0,
+            "Nome": "Bobby"
+          },
+          {
+            "Altezza": 0.8,
+            "Eta": 6.0,
+            "Nome": "Fuffy"
+          },
+          {
+            "Altezza": 0.2,
+            "Eta": 1.0,
+            "Nome": "Antonio"
+          }
+        ],
+        "type": "tchmi:project#/definitions/Array(0..0) OF Cane",
+        "persist": false,
+        "readonly": false
+      }
+    },
+    "themedResources": {}
+  },
+  "trigger": [],
+  "actionTemplates": [],
+  "languages": {
+    "de": "Localization/de.localization",
+    "en": "Localization/en.localization"
+  },
+  "languageFallback": "",
+  "disableLoadingOptimization": false,
+  "creatorSettings": {
+    "viewport": {
+      "defaultWidth": 800,
+      "defaultHeight": 600
+    }
+  },
+  "binding": {
+    "symbolError": "Ignore"
+  },
+  "packages": [
+    {
+      "name": "Beckhoff.TwinCAT.HMI.Controls",
+      "basePath": "/Beckhoff.TwinCAT.HMI.Controls"
+    },
+    {
+      "name": "Beckhoff.TwinCAT.HMI.Framework",
+      "basePath": "/framework"
+    },
+    {
+      "name": "Beckhoff.TwinCAT.HMI.Functions",
+      "basePath": "/Beckhoff.TwinCAT.HMI.Functions"
+    }
+  ],
+  "keyboardLayouts": [
+    {
+      "url": "KeyboardLayouts/German - compact.keyboard.json"
+    },
+    {
+      "url": "KeyboardLayouts/Numpad (plusminus).keyboard.json"
+    },
+    {
+      "url": "KeyboardLayouts/US - compact.keyboard.json"
+    }
+  ],
+  "systemKeyboard": {
+    "providerName": "",
+    "projectKeyboardMapping": {
+      "de": {
+        "text": "KeyboardLayouts/German - compact.keyboard.json",
+        "decimal": "KeyboardLayouts/Numpad (plusminus).keyboard.json",
+        "numeric": ""
+      },
+      "en": {
+        "text": "KeyboardLayouts/US - compact.keyboard.json",
+        "decimal": "KeyboardLayouts/Numpad (plusminus).keyboard.json",
+        "numeric": ""
+      }
+    }
+  },
+  "systemPopups": {
+    "providerName": "Beckhoff.TcHmiPopups"
+  }
+}

@@ -1,0 +1,83 @@
+<div id="Content2" data-tchmi-type="TcHmi.Controls.System.TcHmiContent" data-tchmi-top="0" data-tchmi-left="0" data-tchmi-width="800" data-tchmi-height="640">
+<div id="TcHmiTextbox" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextbox" data-tchmi-height="26" data-tchmi-height-unit="px" data-tchmi-left="413" data-tchmi-left-unit="px" data-tchmi-text="" data-tchmi-top="155" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-placeholder="Nome">
+<script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
+{
+  "top": 3,
+  "right": 3,
+  "bottom": 3,
+  "left": 3
+}
+</script>
+
+</div>
+<div id="TcHmiTextbox_1" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextbox" data-tchmi-height="26" data-tchmi-height-unit="px" data-tchmi-left="413" data-tchmi-left-unit="px" data-tchmi-text="" data-tchmi-top="213" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-placeholder="Altezza">
+<script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
+{
+  "top": 3,
+  "right": 3,
+  "bottom": 3,
+  "left": 3
+}
+</script>
+
+</div>
+<div id="TcHmiTextbox_2" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextbox" data-tchmi-height="26" data-tchmi-height-unit="px" data-tchmi-left="413" data-tchmi-left-unit="px" data-tchmi-text="" data-tchmi-top="266" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-placeholder="Eta">
+<script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
+{
+  "top": 3,
+  "right": 3,
+  "bottom": 3,
+  "left": 3
+}
+</script>
+
+</div>
+<div id="TcHmiTextblock_1" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="63" data-tchmi-height-unit="px" data-tchmi-left="293" data-tchmi-left-unit="px" data-tchmi-text="Inserire i dati" data-tchmi-top="37" data-tchmi-top-unit="px" data-tchmi-width="223" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-font-size="35">
+</div>
+<div id="TcHmiTextblock_2" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="26" data-tchmi-height-unit="px" data-tchmi-left="240" data-tchmi-left-unit="px" data-tchmi-text="Nome" data-tchmi-top="155" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-font-size="20">
+</div>
+<div id="TcHmiTextblock_3" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="26" data-tchmi-height-unit="px" data-tchmi-left="240" data-tchmi-left-unit="px" data-tchmi-text="Altezza" data-tchmi-top="213" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-font-size="20">
+</div>
+<div id="TcHmiTextblock_4" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="26" data-tchmi-height-unit="px" data-tchmi-left="240" data-tchmi-left-unit="px" data-tchmi-text="Età" data-tchmi-top="266" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-font-size="20">
+</div>
+<div id="TcHmiButton_3" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-height="50" data-tchmi-height-unit="px" data-tchmi-left="340" data-tchmi-left-unit="px" data-tchmi-text="Inserisci" data-tchmi-top="343" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-word-wrap="true">
+
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+[
+  {
+    "event": "TcHmiButton_3.onPressed",
+    "actions": [
+      {
+        "objectType": "Function",
+        "active": true,
+        "fn": "TcHmi.Functions.TcHmiProject3.addItem",
+        "fnParams": [
+          {
+            "objectType": "Symbol",
+            "valueType": "tchmi:general#/definitions/String",
+            "symbolExpression": "%ctrl%TcHmiTextbox::Text%/ctrl%"
+          },
+          {
+            "objectType": "Symbol",
+            "valueType": "tchmi:general#/definitions/Number",
+            "symbolExpression": "%ctrl%TcHmiTextbox_2::Text%/ctrl%"
+          },
+          {
+            "objectType": "Symbol",
+            "valueType": "tchmi:general#/definitions/FLOAT",
+            "symbolExpression": "%ctrl%TcHmiTextbox_1::Text%/ctrl%"
+          },
+          {
+            "objectType": "Symbol",
+            "valueType": "tchmi:general#/definitions/String",
+            "symbolExpression": "%i%caneArray|BindingMode=TwoWay%/i%"
+          }
+        ],
+        "asyncWait": true
+      }
+    ]
+  }
+]
+</script>
+</div>
+</div>

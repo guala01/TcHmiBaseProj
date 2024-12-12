@@ -1,0 +1,117 @@
+<div id="datas" data-tchmi-type="TcHmi.Controls.System.TcHmiContent" data-tchmi-top="0" data-tchmi-left="0" data-tchmi-width="800" data-tchmi-height="640" data-tchmi-left-unit="%">
+
+<div id="TcHmiTextblock_5" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="81" data-tchmi-height-unit="px" data-tchmi-left="245" data-tchmi-left-unit="px" data-tchmi-text="Visualizzazione" data-tchmi-top="23" data-tchmi-top-unit="px" data-tchmi-width="342" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-font-size="50" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center">
+</div>
+<div id="TcHmiDatagrid" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiDatagrid" data-tchmi-height="200" data-tchmi-height-unit="px" data-tchmi-left="12.4" data-tchmi-left-unit="%" data-tchmi-top="190" data-tchmi-top-unit="px" data-tchmi-width="515" data-tchmi-width-unit="px"  data-tchmi-src-data="%i%caneArray|BindingMode=TwoWay%/i%">
+<script data-tchmi-target-attribute="data-tchmi-src-column" type="application/json">
+[
+  {
+    "name": "Nome",
+    "label": "Nome1",
+    "control": "TextBlock",
+    "width": 70,
+    "widthUnit": "px",
+    "resize": true,
+    "sortable": false,
+    "minWidth": 100,
+    "minWidthUnit": "px",
+    "editable": false,
+    "horizontalAlignment": "Center",
+    "verticalAlignment": "Center",
+    "headerHorizontalAlignment": "Center",
+    "headerVerticalAlignment": "Center",
+    "ignoreEscapeSequences": false,
+    "autoFocusOut": true,
+    "autoSelectText": false
+  },
+  {
+    "name": "Altezza",
+    "label": "Altezza",
+    "control": "NumericInput",
+    "width": 70,
+    "widthUnit": "px",
+    "resize": true,
+    "sortable": true,
+    "minWidth": 70,
+    "minWidthUnit": "px",
+    "editable": false,
+    "horizontalAlignment": "Center",
+    "verticalAlignment": "Center",
+    "headerHorizontalAlignment": "Center",
+    "headerVerticalAlignment": "Center",
+    "ignoreEscapeSequences": false,
+    "autoFocusOut": true,
+    "autoSelectText": false
+  },
+  {
+    "name": "Eta",
+    "label": "Eta",
+    "control": "NumericInput",
+    "width": 70,
+    "widthUnit": "px",
+    "resize": true,
+    "sortable": false,
+    "minWidth": 70,
+    "minWidthUnit": "px",
+    "editable": true,
+    "horizontalAlignment": "Center",
+    "verticalAlignment": "Center",
+    "headerHorizontalAlignment": "Center",
+    "headerVerticalAlignment": "Center",
+    "ignoreEscapeSequences": false,
+    "autoFocusOut": true,
+    "autoSelectText": false
+  }
+]
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-cell-content-padding" type="application/json">
+{
+  "left": 3,
+  "leftUnit": "px",
+  "right": 3,
+  "rightUnit": "px",
+  "top": 0,
+  "topUnit": "px",
+  "bottom": 0,
+  "bottomUnit": "px"
+}
+</script>
+
+
+<script data-tchmi-target-attribute="data-tchmi-header-background-color" type="application/json">
+{
+  "color": "rgba(0, 0, 0, 1)"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-row-numbers-background-color" type="application/json">
+{
+  "color": "rgba(129, 51, 51, 1)"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-background-color" type="application/json">
+{
+  "color": "rgba(255, 255, 255, 1)"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-border-color" type="application/json">
+{
+  "color": "rgba(255, 255, 255, 1)"
+}
+</script>
+</div>
+<div id="TcHmiTextbox_3" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextbox" data-tchmi-height="102" data-tchmi-height-unit="px" data-tchmi-left="73" data-tchmi-left-unit="px" data-tchmi-text="%i%caneArray%/i%" data-tchmi-top="428" data-tchmi-top-unit="px" data-tchmi-width="525" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-multiline="true">
+<script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
+{
+  "top": 3,
+  "right": 3,
+  "bottom": 3,
+  "left": 3
+}
+</script>
+
+</div>
+</div>

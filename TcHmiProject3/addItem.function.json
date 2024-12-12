@@ -1,0 +1,81 @@
+{
+  "function": {
+    "name": "addItem",
+    "namespace": "TcHmi.Functions.TcHmiProject3",
+    "displayName": "addItem",
+    "description": "",
+    "waitMode": "Synchronous",
+    "category": "",
+    "returnValue": {
+      "type": "tchmi:general#/definitions/Null"
+    },
+    "visible": true,
+    "injectContextObject": false,
+    "arguments": [
+      {
+        "name": "name",
+        "displayName": "Name",
+        "type": "tchmi:general#/definitions/String",
+        "description": "This is an important Parameter which does... This text is used in a tooltip.",
+        "defaultValue": null,
+        "required": true,
+        "bindable": true,
+        "restParameter": false,
+        "asReference": false,
+        "allowControlAttributeBindingOptions": false
+      },
+      {
+        "name": "age",
+        "displayName": "Age",
+        "type": "tchmi:general#/definitions/Number",
+        "description": "",
+        "defaultValue": "",
+        "required": true,
+        "bindable": true,
+        "restParameter": false,
+        "asReference": false,
+        "allowControlAttributeBindingOptions": false
+      },
+      {
+        "name": "height",
+        "displayName": "Height",
+        "type": "tchmi:general#/definitions/FLOAT",
+        "description": "",
+        "defaultValue": "",
+        "required": true,
+        "bindable": true,
+        "restParameter": false,
+        "asReference": false,
+        "allowControlAttributeBindingOptions": false
+      },
+      {
+        "name": "dogArray",
+        "displayName": "Array",
+        "type": "tchmi:project#/definitions/Array(0..0) OF Cane",
+        "description": "",
+        "defaultValue": "",
+        "required": true,
+        "bindable": true,
+        "restParameter": false,
+        "asReference": false,
+        "allowControlAttributeBindingOptions": false
+      }
+    ]
+  },
+  "$schema": "./../Packages/Beckhoff.TwinCAT.HMI.Framework.12.760.59/runtimes/native1.12-tchmi/Schema/FunctionDescription.Schema.json",
+  "apiVersion": 1,
+  "version": {
+    "full": "0.0.0.0",
+    "major": 0,
+    "minor": 0,
+    "revision": 0,
+    "build": 0
+  },
+  "dependencyFiles": [
+    {
+      "name": "addItem.js",
+      "type": "JavaScript",
+      "description": ""
+    }
+  ]
+}
